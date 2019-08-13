@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN apt-get update && apt-get install -y python-pip zlib1g-dev libbz2-dev liblzma-dev
+RUN apt-get update && apt-get install -y python-pip
 
 RUN pip install cython numpy scipy 
 
