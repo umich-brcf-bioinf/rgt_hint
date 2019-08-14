@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y zlib1g-dev libbz2-dev liblzma-dev pytho
 RUN pip install cython numpy scipy 
 RUN pip install RGT==0.12.1
 
-RUN cd /root/rgtdata/
+WORKDIR "/root/rgtdata/"
 
 RUN ls 
 
