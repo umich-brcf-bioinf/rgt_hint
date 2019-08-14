@@ -7,6 +7,8 @@ RUN pip install RGT==0.12.1
 
 RUN cd /root/rgtdata/
 
+RUN ls 
+
 RUN python setupGenomicData.py --hg19 
 RUN python setupGenomicData.py --mm10 
 RUN python setupGenomicData.py --hg38
