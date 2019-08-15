@@ -5,6 +5,9 @@ RUN apt-get update && apt-get install -y zlib1g-dev libbz2-dev liblzma-dev libkr
 RUN pip install cython numpy scipy 
 RUN pip install RGT==0.12.1
 
+RUN wget http://se.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
+RUN gdebi libpng12-0_1.2.54-1ubuntu1_amd64
+
 WORKDIR "/root/rgtdata/"
 
 RUN rm data.config.user 
