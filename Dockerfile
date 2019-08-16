@@ -6,7 +6,7 @@ RUN pip install cython numpy scipy
 RUN pip install RGT==0.12.1
 
 RUN wget http://se.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
-RUN gdebi libpng12-0_1.2.54-1ubuntu1_amd64.deb
+RUN gdebi -n libpng12-0_1.2.54-1ubuntu1_amd64.deb
 
 WORKDIR "/root/rgtdata/"
 
@@ -86,4 +86,4 @@ default_bias_table_F_ATAC: /nfs/med-bfx-common/rgt-data/fp_hmms/atac_bias_table_
 default_bias_table_R_ATAC: /nfs/med-bfx-common/rgt-data/fp_hmms/atac_bias_table_R.txt\n\
 dependency_model: /nfs/med-bfx-common/rgt-data/fp_hmms/LearnDependencyModel.jar\n\
 slim_dimont_predictor: /nfs/med-bfx-common/rgt-data/fp_hmms/SlimDimontPredictor.jar\n\
-default_test_fa: /nfs/med-bfx-common/rgt-data/fp_hmms/test.fa\' > data.config.user
+default_test_fa: /nfs/med-bfx-common/rgt-data/fp_hmms/test.fa' > data.config.user
